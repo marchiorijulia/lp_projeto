@@ -598,3 +598,38 @@ hr{
     }
 }
 
+/* RESPONSIVIDADE 1280px */
+@media screen and (min-width: 1280px) and (max-width: 1280px){
+    /* NAV */
+    nav{
+        height: 8vh;
+    }
+    .criar-conta-botao{
+        height: 4vh;
+    }
+    /* SECTION 1 */
+    .section-1{
+        height: 45vh;
+        gap: 5vh;
+    }
+    /* SECTION 2 */
+    .section-2{
+        height: 30vh;
+    }
+    /* SECTION 3 */
+    .section-3{
+        height: 40vh;
+    }
+    /* SECTION 4 */
+    .section-4{
+        height: 40vh;
+    }
+    /* FOOTER */
+    footer{
+        height: 40vh;
+    }
+    .footer-section_1{
+        height: 25vh;
+    }
+}
+
