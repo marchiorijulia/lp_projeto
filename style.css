@@ -1,0 +1,600 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --roxo-claro: #4d5270;
+    --roxo-escuro: #2a2d3e;
+    --rosa-claro: #f7529f;
+    --rosa-escuro: #bb3975;
+    --preto: #1b1c20;
+    --cinza: #888888;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+/* NAVBAR */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    height: 14vh;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--preto);
+}
+
+.nav-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+    gap: 20px;
+}
+
+.nav-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 45%;
+    gap: 20px;
+}
+
+#bars-icon{
+    display: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--preto);
+    display: flex;
+    flex-direction: row;
+}
+
+nav a:hover{
+    color: var(--rosa-claro);
+}
+
+nav img{
+    width: 72px;
+    height: 61px;
+}
+
+#chevron-down,
+#login-icon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.criar-conta-botao{
+    background-color: var(--rosa-claro);
+    width: 15vw;
+    height: 7vh;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.criar-conta-botao:hover{
+    background-color: var(--rosa-escuro);
+    transition: 100ms;
+}
+
+/* SECTION 1 */
+
+.section-1{
+    background-image: url(imagens/mulhercarro.jpg);
+    background-size: cover;
+    height: 92vh;
+    width: 100%;
+    gap: 10vh;
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section-1 h1{
+    font-size: 90px;
+}
+
+.section-1 p{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.section-1 a{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    color: var(--roxo-claro);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-1 a div{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-1 a hr{
+    width: 100%;
+    border: solid 1px;
+}
+
+#chevron-right{
+    color: var(--roxo-claro);
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* SECTION 2 */
+
+.section-2{
+    height: 74vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.card{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    border: solid 2px var(--roxo-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.card h1{
+    font-size: 32px;
+    color: var(--preto);
+}
+
+.card p{
+    font-size: 24px;
+    color: var(--preto);
+    font-weight: 600;
+}
+
+#credit-card, #investimentos, #loan{
+    display: flex;
+    align-items: center;
+    color: var(--roxo-claro);
+    font-size: 50px;
+}
+
+.card a{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    color: var(--rosa-claro);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card a div{
+    display: flex;
+    flex-direction: row;
+}
+
+.card a hr{
+    width: 50%;
+    border: solid 1px;
+}
+
+.card #chevron-right{
+    color: var(--rosa-claro);
+}
+
+/* SECTION 3 */
+
+.section-3{
+    background-color: var(--roxo-escuro);
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.section-3 img{
+    height: 519px;
+}
+
+.s3-text{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    gap: 30px;
+}
+
+.section-3 h1{
+    font-size: 64px;
+}
+
+.section-3 p{
+    font-size: 36px;
+}
+
+.section-3 a{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--rosa-claro);
+}
+
+.section-3 a div{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-3 a hr{
+    width: 47.5%;
+    border: solid 1px;
+}
+
+.section-3 #chevron-right{
+    color: var(--rosa-claro);
+}
+
+/* SECTION 4 */
+
+.section-4{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.section-4 h1{
+    font-weight: bold;
+    font-size: 64px;
+    color: var(--rosa-claro);
+}
+
+.section-4 p{
+    color: var(--preto);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.s4-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.newsletter{
+    width: 479px;
+    height: 474px;
+    border-radius: 20px;
+    border: solid 2px var(--roxo-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.newsletter h1{
+    font-size: 40px;
+    color: var(--roxo-escuro);
+}
+
+.newsletter div{
+    height: 80px;
+}
+
+.newsletter p{
+    font-size: 20px;
+    color: var(--roxo-escuro);
+    font-weight: 600;
+}
+
+.newsletter input{
+    color: var(--cinza);
+    height: 54px;
+    width: 420px;
+    border-radius: 15px;
+    border: solid 1.5px var(--roxo-escuro);
+    padding: 10px;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+}
+
+.newsletter button{
+    background-color: #1b1c2000;
+    height: 54px;
+    width: 420px;
+    border-radius: 15px;
+    border: solid 1.5px var(--rosa-claro);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--rosa-claro);
+    font-family: "Montserrat", sans-serif;
+}
+
+.newsletter button:hover{
+    background-color: var(--rosa-claro);
+    color: white;
+    transition: 100ms;
+}
+
+.newsletter button:active{
+    background-color: var(--rosa-escuro);
+    border-color: var(--rosa-escuro);
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 75vh;
+    background-color: var(--preto);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-section_1{
+    width: 90%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    gap: 16%;
+    color: white;
+}
+
+.section_1-column{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section_1-column h1{
+    padding-bottom: 35px;
+}
+
+.section_1-column a{
+    text-decoration: none;
+    color: white;
+}
+
+.section_1-column a:hover{
+    text-decoration: underline;
+    color: var(--rosa-claro);
+}
+
+hr{
+    width: 90%;
+    border: solid 1px var(--cinza);
+}
+
+.footer-section_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social_media a{
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+.social_media a:hover{
+    color: var(--rosa-claro);
+}
+
+.social_media a:active{
+    color: var(--rosa-escuro);
+}
+
+#social_media_icons{
+    font-size: 50px;
+}
+
+.footer-section_2{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.footer-section_2 p{
+    color: var(--cinza);
+    font-weight: bold;
+    text-align: right;
+}
+.footer-section_2 img{
+    width: 171px;
+    height: 113px;
+}
+
+/* RESPONSIVIDADE MOBILE */
+
+@media screen and (max-width: 414px){
+
+    /* NAVBAR */
+    nav{
+        font-size: 10px;
+        height: 10vh;
+    }
+
+    .nav-1{
+        display: none;
+    }
+
+    .nav-2{
+        width: 90%;
+    }
+
+    .nav-2 a{
+        display: none;
+    }
+
+    #bars-icon{
+        display: contents;
+        font-size: 30px;
+        color: var(--preto);
+    }
+
+    .criar-conta-botao{
+        width: 33vw;
+        height: 5vh;
+        font-size: 15px;
+    }
+
+    /* SECTION 1 */
+    .section-1{
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 40px;
+        height: 85vh;
+        padding: 0px 0px 40px 0px;
+    }
+
+    .section-1 h1{
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .section-1 p{
+        text-align: center;
+    }
+
+    /* SECTION 2 */
+    .section-2{
+        flex-direction: column;
+        height: 140vh;
+    }
+    
+    /* SECTION 3 */
+    .section-3{
+        flex-direction: column;
+        height: 100vh;
+        padding: 10px 40px 40px 40px;
+    }
+
+    .section-3 img{
+        height: 350px;
+    }
+
+    .s3-text{
+        text-align: center;
+    }
+
+    .section-3 h1{
+        font-size: 50px;
+    }
+
+    .section-3 p{
+        font-size: 30px;
+    }
+
+    .section-3 a hr{
+        width: 95%;
+    }
+
+    /* SECTION 4 */
+    .section-4{
+        flex-direction: column;
+        gap: 30px;
+        height: 105vh;
+    }
+
+    .section-4 p{
+        font-size: 25px;
+    }
+
+    .section-4 h1{
+        font-size: 45px;
+    }
+
+    .s4-text{
+        text-align: center;
+    }
+
+    .newsletter{
+        width: 350px;
+        height: 380px;
+        gap: 30px;
+    }
+
+    .newsletter h1{
+        font-size: 30px;
+    }
+
+    .newsletter input,
+    .newsletter button{
+        width: 320px;
+        height: 50px;
+    }
+
+    /* FOOTER */
+
+    footer{
+        height: 120vh;
+    }
+
+    .footer-section_1{
+        flex-direction: column;
+        height: 70vh;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-section_2{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-section_2 p{
+        text-align: center;
+    }
+}
+
